@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		E02CC46628F6BC0C00781615 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02CC46528F6BC0C00781615 /* AppDelegate.swift */; };
 		E02CC46828F6BC0C00781615 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02CC46728F6BC0C00781615 /* SceneDelegate.swift */; };
-		E02CC46A28F6BC0C00781615 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02CC46928F6BC0C00781615 /* ViewController.swift */; };
+		E02CC46A28F6BC0C00781615 /* ScoreboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02CC46928F6BC0C00781615 /* ScoreboardViewController.swift */; };
 		E02CC46D28F6BC0C00781615 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E02CC46B28F6BC0C00781615 /* Main.storyboard */; };
 		E02CC46F28F6BC0D00781615 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E02CC46E28F6BC0D00781615 /* Assets.xcassets */; };
 		E02CC47228F6BC0D00781615 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E02CC47028F6BC0D00781615 /* LaunchScreen.storyboard */; };
+		E0782E4A28F8F5E20018D19A /* ScoreboardHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0782E4928F8F5E20018D19A /* ScoreboardHeaderView.swift */; };
+		E0782E4C28F8FF810018D19A /* ScoreboardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0782E4B28F8FF810018D19A /* ScoreboardContentView.swift */; };
 		EDBFA664EB012CCB13639C6B /* Pods_Practice20221012.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A93A840DAD7602E1875FF0CB /* Pods_Practice20221012.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,11 +25,13 @@
 		E02CC46228F6BC0C00781615 /* Practice20221012.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practice20221012.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E02CC46528F6BC0C00781615 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E02CC46728F6BC0C00781615 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E02CC46928F6BC0C00781615 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E02CC46928F6BC0C00781615 /* ScoreboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardViewController.swift; sourceTree = "<group>"; };
 		E02CC46C28F6BC0C00781615 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E02CC46E28F6BC0D00781615 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E02CC47128F6BC0D00781615 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E02CC47328F6BC0D00781615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0782E4928F8F5E20018D19A /* ScoreboardHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardHeaderView.swift; sourceTree = "<group>"; };
+		E0782E4B28F8FF810018D19A /* ScoreboardContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +86,7 @@
 			children = (
 				E02CC46528F6BC0C00781615 /* AppDelegate.swift */,
 				E02CC46728F6BC0C00781615 /* SceneDelegate.swift */,
-				E02CC46928F6BC0C00781615 /* ViewController.swift */,
-				E02CC47C28F6C2B700781615 /* TestView */,
+				E02CC47C28F6C2B700781615 /* Scoreboard */,
 				E02CC46B28F6BC0C00781615 /* Main.storyboard */,
 				E02CC46E28F6BC0D00781615 /* Assets.xcassets */,
 				E02CC47028F6BC0D00781615 /* LaunchScreen.storyboard */,
@@ -95,6 +98,8 @@
 		E02CC47928F6C28D00781615 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E0782E4928F8F5E20018D19A /* ScoreboardHeaderView.swift */,
+				E0782E4B28F8FF810018D19A /* ScoreboardContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -102,6 +107,7 @@
 		E02CC47A28F6C29B00781615 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E02CC46928F6BC0C00781615 /* ScoreboardViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -113,14 +119,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		E02CC47C28F6C2B700781615 /* TestView */ = {
+		E02CC47C28F6C2B700781615 /* Scoreboard */ = {
 			isa = PBXGroup;
 			children = (
 				E02CC47B28F6C2A900781615 /* Model */,
 				E02CC47A28F6C29B00781615 /* ViewController */,
 				E02CC47928F6C28D00781615 /* View */,
 			);
-			path = TestView;
+			path = Scoreboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,9 +244,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E02CC46A28F6BC0C00781615 /* ViewController.swift in Sources */,
+				E02CC46A28F6BC0C00781615 /* ScoreboardViewController.swift in Sources */,
+				E0782E4A28F8F5E20018D19A /* ScoreboardHeaderView.swift in Sources */,
 				E02CC46628F6BC0C00781615 /* AppDelegate.swift in Sources */,
 				E02CC46828F6BC0C00781615 /* SceneDelegate.swift in Sources */,
+				E0782E4C28F8FF810018D19A /* ScoreboardContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +398,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KH3PA94KG7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Practice20221012/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -418,6 +427,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KH3PA94KG7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Practice20221012/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
