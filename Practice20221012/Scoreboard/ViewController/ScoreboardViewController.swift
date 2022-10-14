@@ -12,7 +12,6 @@ class ScoreboardViewController: UIViewController {
     
     lazy var headerView: ScoreboardHeaderView = {
         let view = ScoreboardHeaderView()
-        //        view.backgroundColor=UIColor.yellow
         return view
     }()
     
@@ -23,7 +22,6 @@ class ScoreboardViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         initView()
         setupUILayout()
     }
