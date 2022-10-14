@@ -15,6 +15,7 @@
 		E02CC47228F6BC0D00781615 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E02CC47028F6BC0D00781615 /* LaunchScreen.storyboard */; };
 		E0782E4A28F8F5E20018D19A /* ScoreboardHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0782E4928F8F5E20018D19A /* ScoreboardHeaderView.swift */; };
 		E0782E4C28F8FF810018D19A /* ScoreboardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0782E4B28F8FF810018D19A /* ScoreboardContentView.swift */; };
+		E0782E4E28F906DF0018D19A /* ScoreboardBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0782E4D28F906DF0018D19A /* ScoreboardBottomView.swift */; };
 		EDBFA664EB012CCB13639C6B /* Pods_Practice20221012.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A93A840DAD7602E1875FF0CB /* Pods_Practice20221012.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		E02CC47328F6BC0D00781615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0782E4928F8F5E20018D19A /* ScoreboardHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardHeaderView.swift; sourceTree = "<group>"; };
 		E0782E4B28F8FF810018D19A /* ScoreboardContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardContentView.swift; sourceTree = "<group>"; };
+		E0782E4D28F906DF0018D19A /* ScoreboardBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardBottomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			children = (
 				E0782E4928F8F5E20018D19A /* ScoreboardHeaderView.swift */,
 				E0782E4B28F8FF810018D19A /* ScoreboardContentView.swift */,
+				E0782E4D28F906DF0018D19A /* ScoreboardBottomView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E02CC46A28F6BC0C00781615 /* ScoreboardViewController.swift in Sources */,
+				E0782E4E28F906DF0018D19A /* ScoreboardBottomView.swift in Sources */,
 				E0782E4A28F8F5E20018D19A /* ScoreboardHeaderView.swift in Sources */,
 				E02CC46628F6BC0C00781615 /* AppDelegate.swift in Sources */,
 				E02CC46828F6BC0C00781615 /* SceneDelegate.swift in Sources */,

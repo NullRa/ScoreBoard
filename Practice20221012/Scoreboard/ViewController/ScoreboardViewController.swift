@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SnapKit
 
 class ScoreboardViewController: UIViewController {
     
@@ -20,6 +19,11 @@ class ScoreboardViewController: UIViewController {
         return view
     }()
     
+    lazy var bottomView: ScoreboardBottomView = {
+        let view = ScoreboardBottomView()
+        return view
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initView()
@@ -29,6 +33,7 @@ class ScoreboardViewController: UIViewController {
     func initView(){
         view.addSubview(headerView)
         view.addSubview(contentView)
+        view.addSubview(bottomView)
     }
     
     func setupUILayout(){
@@ -39,6 +44,10 @@ class ScoreboardViewController: UIViewController {
         contentView.snp.makeConstraints { make in
             make.left.right.equalToSuperview()
             make.top.equalTo(headerView.snp.bottom)
+        }
+        bottomView.snp.makeConstraints { make in
+            make.bottom.left.right.equalToSuperview()
+            make.top.equalTo(contentView.snp.bottom)
         }
     }
 }
