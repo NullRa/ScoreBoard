@@ -16,6 +16,8 @@
 		E0782E4A28F8F5E20018D19A /* ScoreboardHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0782E4928F8F5E20018D19A /* ScoreboardHeaderView.swift */; };
 		E0782E4C28F8FF810018D19A /* ScoreboardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0782E4B28F8FF810018D19A /* ScoreboardContentView.swift */; };
 		E0782E4E28F906DF0018D19A /* ScoreboardBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0782E4D28F906DF0018D19A /* ScoreboardBottomView.swift */; };
+		E0782E5028F914F10018D19A /* ScoreboardView+Bindings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0782E4F28F914F10018D19A /* ScoreboardView+Bindings.swift */; };
+		E0782E5228F939900018D19A /* ScoreboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0782E5128F939900018D19A /* ScoreboardViewModel.swift */; };
 		EDBFA664EB012CCB13639C6B /* Pods_Practice20221012.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A93A840DAD7602E1875FF0CB /* Pods_Practice20221012.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +36,8 @@
 		E0782E4928F8F5E20018D19A /* ScoreboardHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardHeaderView.swift; sourceTree = "<group>"; };
 		E0782E4B28F8FF810018D19A /* ScoreboardContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardContentView.swift; sourceTree = "<group>"; };
 		E0782E4D28F906DF0018D19A /* ScoreboardBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardBottomView.swift; sourceTree = "<group>"; };
+		E0782E4F28F914F10018D19A /* ScoreboardView+Bindings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScoreboardView+Bindings.swift"; sourceTree = "<group>"; };
+		E0782E5128F939900018D19A /* ScoreboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				E02CC46928F6BC0C00781615 /* ScoreboardViewController.swift */,
+				E0782E4F28F914F10018D19A /* ScoreboardView+Bindings.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 		E02CC47B28F6C2A900781615 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E0782E5128F939900018D19A /* ScoreboardViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -250,6 +256,8 @@
 				E02CC46A28F6BC0C00781615 /* ScoreboardViewController.swift in Sources */,
 				E0782E4E28F906DF0018D19A /* ScoreboardBottomView.swift in Sources */,
 				E0782E4A28F8F5E20018D19A /* ScoreboardHeaderView.swift in Sources */,
+				E0782E5028F914F10018D19A /* ScoreboardView+Bindings.swift in Sources */,
+				E0782E5228F939900018D19A /* ScoreboardViewModel.swift in Sources */,
 				E02CC46628F6BC0C00781615 /* AppDelegate.swift in Sources */,
 				E02CC46828F6BC0C00781615 /* SceneDelegate.swift in Sources */,
 				E0782E4C28F8FF810018D19A /* ScoreboardContentView.swift in Sources */,

@@ -7,7 +7,10 @@
 
 import UIKit
 import SnapKit
+import RxSwift
 class ScoreboardViewController: UIViewController {
+    
+    lazy var disposeBag: DisposeBag = .init()
     
     lazy var headerView: ScoreboardHeaderView = {
         let view = ScoreboardHeaderView()
