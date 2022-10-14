@@ -14,7 +14,7 @@ class ScoreboardHeaderView: UIView {
         let label = UILabel()
         label.text = "標題的部分"
         label.textColor = UIColor.blue
-        label.font = UIFont.systemFont(ofSize: 100)
+        label.font = UIFont.systemFont(ofSize: 20)
         return label
     }()
     
