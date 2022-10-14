@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import SnapKit
 class ScoreboardViewController: UIViewController {
     
     lazy var headerView: ScoreboardHeaderView = {
