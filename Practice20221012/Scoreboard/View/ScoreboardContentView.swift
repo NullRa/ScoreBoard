@@ -9,7 +9,7 @@ import UIKit
 
 class ScoreboardContentView: UIView {
     lazy var scoreLabel: UILabel = {
-       let label = UILabel()
+        let label = UILabel()
         label.text = "計分的部分"
         label.textColor = UIColor.blue
         label.font = UIFont.systemFont(ofSize: 20)

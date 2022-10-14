@@ -9,15 +9,15 @@ import UIKit
 import SnapKit
 
 class ScoreboardViewController: UIViewController {
-
+    
     lazy var headerView: ScoreboardHeaderView = {
         let view = ScoreboardHeaderView()
-//        view.backgroundColor=UIColor.yellow
+        //        view.backgroundColor=UIColor.yellow
         return view
     }()
     
     lazy var contentView: ScoreboardContentView = {
-       let view = ScoreboardContentView()
+        let view = ScoreboardContentView()
         return view
     }()
     
@@ -27,7 +27,7 @@ class ScoreboardViewController: UIViewController {
         initView()
         setupUILayout()
     }
-
+    
     func initView(){
         view.addSubview(headerView)
         view.addSubview(contentView)
