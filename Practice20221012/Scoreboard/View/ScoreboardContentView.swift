@@ -27,7 +27,7 @@ class ScoreboardContentView: UIView {
 }
 
 extension ScoreboardContentView {
-    func setupUI(){
+    func setupUI() {
         self.addSubview(scoreLabel)
         
         scoreLabel.snp.makeConstraints { make in

@@ -32,9 +32,9 @@ class ScoreboardViewController: UIViewController {
     }
     
     func setupUILayout(){
-        headerView.snp.makeConstraints {
-            $0.top.left.right.equalToSuperview()
-            $0.height.equalTo(182)
+        headerView.snp.makeConstraints { make in
+            make.top.left.right.equalToSuperview()
+            make.height.equalTo(182)
         }
         contentView.snp.makeConstraints { make in
             make.left.right.equalToSuperview()

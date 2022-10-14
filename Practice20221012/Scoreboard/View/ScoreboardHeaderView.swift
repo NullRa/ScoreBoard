@@ -23,7 +23,7 @@ class ScoreboardHeaderView: UIView {
         setupUI()
     }
     
-    required init?(coder: NSCoder){
+    required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
@@ -32,9 +32,8 @@ extension ScoreboardHeaderView {
     func setupUI() {
         self.addSubview(titleLabel)
         
-        titleLabel.snp.makeConstraints{
-            //            $0.left.db
-            $0.edges.equalTo(self).inset(UIEdgeInsets(top: 20,left: 20,bottom: 20,right: 20))
+        titleLabel.snp.makeConstraints{ make in
+            make.edges.equalTo(self).inset(UIEdgeInsets(top: 20,left: 20,bottom: 20,right: 20))
         }
     }
 }
