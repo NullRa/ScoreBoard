@@ -14,7 +14,6 @@ class ScoreboardBottomView: UIView {
         btn.backgroundColor = UIColor.green
         btn.tintColor = UIColor.white
         btn.isEnabled = true
-        btn.addTarget(self, action: #selector(testBtn), for: .touchUpInside)
         return btn
     }()
     
@@ -67,10 +66,6 @@ class ScoreboardBottomView: UIView {
     
     required init?(coder: NSCoder) {
         fatalError("init(code:) has not been implemented")
-    }
-    
-    @objc func testBtn(){
-        print("testBtn")
     }
 }
 

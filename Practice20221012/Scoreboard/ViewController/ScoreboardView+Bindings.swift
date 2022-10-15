@@ -12,15 +12,19 @@ import RxSwift
 extension ScoreboardViewController {
     func bindings() {
         bottomView.leftButton.rx.tap.bind{ [weak self] _ in
-//            self?
+            self?.viewModel.teamAGetPoint()
         }.disposed(by: self.disposeBag)
         
         bottomView.middleButton.rx.tap.bind{ [weak self] _ in
-//            self?
+            //            self?
         }.disposed(by: self.disposeBag)
         
         bottomView.rightButton.rx.tap.bind{ [weak self] _ in
-//            self?
+            self?.viewModel.teamBGetPoint()
         }.disposed(by: self.disposeBag)
+        
+        viewModel.output.scoreboardString.subscribe(onNext: {[weak self] lblString in
+            self?.contentView.scoreLabel.text = lblString
+        }).disposed(by: disposeBag)
     }
 }

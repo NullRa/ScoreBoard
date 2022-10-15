@@ -11,6 +11,7 @@ import RxSwift
 class ScoreboardViewController: UIViewController {
     
     lazy var disposeBag: DisposeBag = .init()
+    lazy var viewModel = ScoreboardViewModel()
     
     lazy var headerView: ScoreboardHeaderView = {
         let view = ScoreboardHeaderView()
@@ -31,6 +32,8 @@ class ScoreboardViewController: UIViewController {
         super.viewDidLoad()
         initView()
         setupUILayout()
+        bindings()
+        viewModel.bindings()
     }
     
     func initView(){
