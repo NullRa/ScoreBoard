@@ -58,8 +58,7 @@ class ScoreboardViewModel {
     }
     
     func randomGetPoint(){
-        //        FIXME改成隨機得分
-        //        output.aString.accept("testA")
+        Bool.random() ? teamAGetPoint() : teamBGetPoint()
     }
     
     fileprivate enum GameResult: String {

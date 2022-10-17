@@ -18,6 +18,7 @@ extension ScoreboardViewController {
         
         bottomView.middleButton.rx.tap.bind{ [weak self] _ in
             guard let self = self else { return }
+            self.viewModel.randomGetPoint()
         }.disposed(by: self.disposeBag)
         
         bottomView.rightButton.rx.tap.bind{ [weak self] _ in
