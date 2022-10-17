@@ -62,38 +62,47 @@ class ScoreboardViewModel {
         //        output.aString.accept("testA")
     }
     
+    fileprivate enum GameResult: String {
+        case aWin = "A Win"
+        case bWin = "B Win"
+        case deuce = "Deuce"
+        case aAdv = "Adv : Forty"
+        case bAdv = "Forty : Adv"
+    }
+    
     func getScoreboardString(aP:Int,bP:Int) -> String {
         //deuce後的規則是領先兩分 deuce前的規則是搶4
         if aP > 2 && bP > 2 {
             if aP == bP + 2 {
-                return "A Win"
+                return GameResult.aWin.rawValue
             }
             if bP == aP + 2 {
-                return "B Win"
+                return GameResult.bWin.rawValue
             }
-            return aP == bP ? "Deuce" : aP > bP ? "Adv : Forty" : "Forty : Adv"
+            return aP == bP ? GameResult.deuce.rawValue : aP > bP ? GameResult.aAdv.rawValue : GameResult.bAdv.rawValue
         } else {
             if aP == 4 {
-                return "A Win"
+                return GameResult.aWin.rawValue
             }
             if bP == 4 {
-                return "B Win"
+                return GameResult.bWin.rawValue
             }
             let aStr = getPointString(point: aP)
             let bStr = getPointString(point: bP)
             return aStr + " : " + bStr
         }
     }
+    
     func getPointString(point:Int) -> String {
-        if point == 1 {
+        switch point {
+        case 1:
             return "Fifteen"
-        }
-        if point == 2 {
+        case 2:
             return "Thirty"
-        }
-        if point == 3 {
+        case 3:
             return "Forty"
+        default:
+            return "Love"
         }
-        return "Love"
     }
 }
