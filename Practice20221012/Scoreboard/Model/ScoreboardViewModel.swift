@@ -63,18 +63,26 @@ class ScoreboardViewModel {
     }
     
     func getScoreboardString(aP:Int,bP:Int) -> String {
-        if aP == bP + 2 && aP > 3 {
-            return "A Win"
-        }
-        if bP == aP + 2 && bP > 3 {
-            return "B Win"
-        }
+        //deuce後的規則是領先兩分 deuce前的規則是搶4
         if aP > 2 && bP > 2 {
+            if aP == bP + 2 {
+                return "A Win"
+            }
+            if bP == aP + 2 {
+                return "B Win"
+            }
             return aP == bP ? "Deuce" : aP > bP ? "Adv : Forty" : "Forty : Adv"
+        } else {
+            if aP == 4 {
+                return "A Win"
+            }
+            if bP == 4 {
+                return "B Win"
+            }
+            let aStr = getPointString(point: aP)
+            let bStr = getPointString(point: bP)
+            return aStr + " : " + bStr
         }
-        let aStr = getPointString(point: aP)
-        let bStr = getPointString(point: bP)
-        return aStr + " : " + bStr
     }
     func getPointString(point:Int) -> String {
         if point == 1 {
