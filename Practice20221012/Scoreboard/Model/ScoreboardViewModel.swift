@@ -32,13 +32,15 @@ class ScoreboardViewModel {
     
     func bindings(){
         output.aPoint.subscribe(onNext: {[weak self] aP in
-            let resultString = self?.getScoreboardString(aP: aP, bP: (self?.output.bPoint.value)!)
-            self?.output.scoreboardString.accept(resultString!)
+            guard let self = self else { return }
+            let resultString = self.getScoreboardString(aP: aP, bP: self.output.bPoint.value)
+            self.output.scoreboardString.accept(resultString)
         }).disposed(by: disposeBag)
         
         output.bPoint.subscribe(onNext: {[weak self] bP in
-            let resultString = self?.getScoreboardString(aP: (self?.output.aPoint.value)!, bP: bP)
-            self?.output.scoreboardString.accept(resultString!)
+            guard let self = self else { return }
+            let resultString = self.getScoreboardString(aP: self.output.aPoint.value, bP: bP)
+            self.output.scoreboardString.accept(resultString)
         }).disposed(by: disposeBag)
     }
     
@@ -68,7 +70,7 @@ class ScoreboardViewModel {
             return "B Win"
         }
         if aP > 2 && bP > 2 {
-            return aP == bP ? "deuce" : aP > bP ? "Adv : Forty" : "Forty : Adv"
+            return aP == bP ? "Deuce" : aP > bP ? "Adv : Forty" : "Forty : Adv"
         }
         let aStr = getPointString(point: aP)
         let bStr = getPointString(point: bP)
